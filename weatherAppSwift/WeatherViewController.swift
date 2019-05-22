@@ -9,17 +9,30 @@
 import UIKit
 import CoreLocation
 import MapKit
+import Alamofire
 
 class WeatherViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var location: CLLocationCoordinate2D?
+    var weather: Weather?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         print(location)
+        requestCharacters()
+    }
+    func requestCharacters() {
+        RequestManager.getMeteo(latitude: "\(location?.latitude ?? 48.856613)", longitude: "\(location?.latitude ?? 2.352222 )", success: { (data) in
+            let decoder = JSONDecoder()
+            self.weather = (try? decoder.decode(Weather.self, from: data))
+            self.tableView.reloadData()
+        }) { (error) in
+            print(error)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
