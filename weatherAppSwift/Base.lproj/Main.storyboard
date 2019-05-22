@@ -13,7 +13,6 @@
         <!--Navigation Controller-->
         <scene sceneID="9q0-6g-XNL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I7S-dp-546" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="JOx-CV-r9U" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rje-3M-sHZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -23,6 +22,7 @@
                         <segue destination="KVZ-5U-NY8" kind="relationship" relationship="rootViewController" id="5x8-hJ-hPX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7S-dp-546" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-631" y="125"/>
         </scene>
@@ -48,10 +48,40 @@
                         <viewLayoutGuide key="safeArea" id="mem-Uh-Ve9"/>
                     </view>
                     <navigationItem key="navigationItem" id="563-H8-M9K"/>
+                    <connections>
+                        <segue destination="Qen-Uf-KFY" kind="show" identifier="annotation_ID" id="KUn-j4-86B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3L-0Y-D60" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="125"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="p4G-or-x1m">
+            <objects>
+                <viewController id="Qen-Uf-KFY" customClass="WeatherViewController" customModule="weatherAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gFJ-tT-JD8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-Ma-AUO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EUF-Ma-AUO" firstAttribute="leading" secondItem="93t-f9-kiZ" secondAttribute="leading" id="NzP-Yl-xMW"/>
+                            <constraint firstItem="EUF-Ma-AUO" firstAttribute="top" secondItem="93t-f9-kiZ" secondAttribute="top" id="Ote-qS-HaX"/>
+                            <constraint firstItem="93t-f9-kiZ" firstAttribute="trailing" secondItem="EUF-Ma-AUO" secondAttribute="trailing" id="Wk3-pz-uEH"/>
+                            <constraint firstItem="93t-f9-kiZ" firstAttribute="bottom" secondItem="EUF-Ma-AUO" secondAttribute="bottom" id="rAZ-Bh-AkB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="93t-f9-kiZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAM-pg-hN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="125"/>
         </scene>
     </scenes>
 </document>
