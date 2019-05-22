@@ -10,7 +10,7 @@
 ## Build generated
 build/
 DerivedData/
-
+weatherAppSwift.xcodeproj/project.pbxproj
 ## Various settings
 *.pbxuser
 !default.pbxuser
