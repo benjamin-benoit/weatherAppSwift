@@ -12,6 +12,8 @@
 		42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A492295216700DC2D21 /* Main.storyboard */; };
 		42F63A4D2295216800DC2D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A4C2295216800DC2D21 /* Assets.xcassets */; };
 		42F63A502295216800DC2D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */; };
+		42F63A58229521B100DC2D21 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A57229521B100DC2D21 /* City.swift */; };
+		42F63A5A229521CE00DC2D21 /* CitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A59229521CE00DC2D21 /* CitiesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		42F63A4C2295216800DC2D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42F63A4F2295216800DC2D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F63A512295216800DC2D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F63A57229521B100DC2D21 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		42F63A59229521CE00DC2D21 /* CitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				42F63A4C2295216800DC2D21 /* Assets.xcassets */,
 				42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */,
 				42F63A512295216800DC2D21 /* Info.plist */,
+				42F63A57229521B100DC2D21 /* City.swift */,
+				42F63A59229521CE00DC2D21 /* CitiesData.swift */,
 			);
 			path = weatherAppSwift;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				42F63A482295216700DC2D21 /* ViewController.swift in Sources */,
 				42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */,
+				42F63A5A229521CE00DC2D21 /* CitiesData.swift in Sources */,
+				42F63A58229521B100DC2D21 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
