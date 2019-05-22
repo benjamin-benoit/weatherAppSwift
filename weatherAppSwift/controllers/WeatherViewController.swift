@@ -22,7 +22,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.register(UINib.init(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "headerCell")
+        self.tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "headerCell")
         requestWeather()
     }
     

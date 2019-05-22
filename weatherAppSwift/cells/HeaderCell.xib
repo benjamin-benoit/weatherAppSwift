@@ -12,42 +12,45 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LTP-N3-Rg5">
-                        <rect key="frame" x="16" y="11" width="70" height="70"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LTP-N3-Rg5">
+                        <rect key="frame" x="16" y="11" width="90" height="90"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="70" id="dhs-QA-dB4"/>
-                            <constraint firstAttribute="width" constant="70" id="fNq-ws-mlP"/>
+                            <constraint firstAttribute="width" constant="90" id="Pwv-3Y-3SN"/>
+                            <constraint firstAttribute="height" constant="90" id="Vvg-Er-evS"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFm-Ph-etR">
-                        <rect key="frame" x="186" y="11" width="118" height="21"/>
+                        <rect key="frame" x="270" y="11" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-an-RpH">
-                        <rect key="frame" x="186" y="40" width="118" height="21"/>
+                        <rect key="frame" x="270" y="80" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9XS-8B-5RT"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="BFm-Ph-etR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3vj-Vx-WES"/>
-                    <constraint firstItem="LTP-N3-Rg5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Lfb-3Z-ZpQ"/>
-                    <constraint firstItem="MJA-an-RpH" firstAttribute="top" secondItem="BFm-Ph-etR" secondAttribute="bottom" constant="8" id="bGu-37-iwZ"/>
-                    <constraint firstItem="MJA-an-RpH" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gB8-6s-SKh"/>
-                    <constraint firstItem="BFm-Ph-etR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lWL-Mt-Aon"/>
-                    <constraint firstItem="MJA-an-RpH" firstAttribute="leading" secondItem="LTP-N3-Rg5" secondAttribute="trailing" constant="100" id="uVo-7v-u3q"/>
-                    <constraint firstItem="BFm-Ph-etR" firstAttribute="leading" secondItem="LTP-N3-Rg5" secondAttribute="trailing" constant="100" id="vOi-xg-vSM"/>
-                    <constraint firstItem="LTP-N3-Rg5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xi9-LQ-wUD"/>
+                    <constraint firstItem="LTP-N3-Rg5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KXh-Pg-CX0"/>
+                    <constraint firstAttribute="trailing" secondItem="MJA-an-RpH" secondAttribute="trailing" constant="8" id="PLM-cV-kQb"/>
+                    <constraint firstAttribute="bottom" secondItem="MJA-an-RpH" secondAttribute="bottom" constant="14.5" id="bHh-Dw-Tk2"/>
+                    <constraint firstAttribute="trailing" secondItem="BFm-Ph-etR" secondAttribute="trailing" constant="8" id="d3B-Vy-bwi"/>
+                    <constraint firstItem="LTP-N3-Rg5" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="w1p-m7-2fC"/>
+                    <constraint firstItem="MJA-an-RpH" firstAttribute="top" secondItem="BFm-Ph-etR" secondAttribute="bottom" constant="48" id="wfw-0n-Ltf"/>
+                    <constraint firstItem="BFm-Ph-etR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="xjw-hD-846"/>
+                    <constraint firstItem="LTP-N3-Rg5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="zd0-ql-1Ql"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -56,7 +59,7 @@
                 <outlet property="temperature" destination="BFm-Ph-etR" id="Iye-Km-z4I"/>
                 <outlet property="weatherIcon" destination="LTP-N3-Rg5" id="nY0-Gt-Ufd"/>
             </connections>
-            <point key="canvasLocation" x="52.799999999999997" y="80.059970014992516"/>
+            <point key="canvasLocation" x="-219.19999999999999" y="53.973013493253376"/>
         </tableViewCell>
     </objects>
 </document>
