@@ -87,25 +87,15 @@
 		42F63A442295216700DC2D21 /* weatherAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC41338C22956AA6001BB6A9 /* controllers */,
+				AC41338B22956A7F001BB6A9 /* cells */,
+				AC41338A22956A58001BB6A9 /* Models */,
 				42F63A452295216700DC2D21 /* AppDelegate.swift */,
-				42F63A472295216700DC2D21 /* MapViewController.swift */,
 				42F63A492295216700DC2D21 /* Main.storyboard */,
 				42F63A4C2295216800DC2D21 /* Assets.xcassets */,
 				42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */,
 				42F63A512295216800DC2D21 /* Info.plist */,
-				42F63A57229521B100DC2D21 /* City.swift */,
-				42F63A59229521CE00DC2D21 /* CitiesData.swift */,
 				AC5D87D422952605001000FC /* RequestManager.swift */,
-				42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */,
-				AC41337722954FB2001BB6A9 /* Weather.swift */,
-				AC41337922956284001BB6A9 /* HeaderCell.swift */,
-				AC41337A22956284001BB6A9 /* HeaderCell.xib */,
-				AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */,
-				AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */,
-				AC4133812295632F001BB6A9 /* DailyForecastCell.swift */,
-				AC4133822295632F001BB6A9 /* DailyForecastCell.xib */,
-				AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */,
-				AC4133862295635C001BB6A9 /* ExtraInfosCell.xib */,
 			);
 			path = weatherAppSwift;
 			sourceTree = "<group>";
@@ -125,6 +115,40 @@
 				CC71DAB41610DAC2708C3D76 /* Pods_weatherAppSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC41338A22956A58001BB6A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42F63A57229521B100DC2D21 /* City.swift */,
+				42F63A59229521CE00DC2D21 /* CitiesData.swift */,
+				AC41337722954FB2001BB6A9 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC41338B22956A7F001BB6A9 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC41337922956284001BB6A9 /* HeaderCell.swift */,
+				AC41337A22956284001BB6A9 /* HeaderCell.xib */,
+				AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */,
+				AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */,
+				AC4133812295632F001BB6A9 /* DailyForecastCell.swift */,
+				AC4133822295632F001BB6A9 /* DailyForecastCell.xib */,
+				AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */,
+				AC4133862295635C001BB6A9 /* ExtraInfosCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		AC41338C22956AA6001BB6A9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42F63A472295216700DC2D21 /* MapViewController.swift */,
+				42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
