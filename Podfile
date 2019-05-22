@@ -8,4 +8,5 @@ target 'weatherAppSwift' do
   # Pods for weatherAppSwift
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod "ForecastIO"
 end
