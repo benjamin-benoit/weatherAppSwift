@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
 class WeatherViewController: UITableViewController {
+    
+    var location: CLLocationCoordinate2D = CLLocationCoordinate2D()
 
     override func viewDidLoad() {
         super.viewDidLoad()
