@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-631" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="TAo-bN-day">
             <objects>
-                <viewController id="KVZ-5U-NY8" sceneMemberID="viewController">
+                <viewController id="KVZ-5U-NY8" customClass="MapViewController" customModule="weatherAppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCl-Sz-oxZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="563-H8-M9K"/>
                     <connections>
+                        <outlet property="mapView" destination="0h0-rK-X9C" id="AZz-9a-yt7"/>
                         <segue destination="Qen-Uf-KFY" kind="show" identifier="annotation_ID" id="KUn-j4-86B"/>
                     </connections>
                 </viewController>
