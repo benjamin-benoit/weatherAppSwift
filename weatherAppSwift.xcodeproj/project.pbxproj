@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		372CB5CA664D6273C772E582 /* Pods_weatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71DAB41610DAC2708C3D76 /* Pods_weatherAppSwift.framework */; };
 		42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A452295216700DC2D21 /* AppDelegate.swift */; };
-		42F63A482295216700DC2D21 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapView.swift */; };
 		42F63A482295216700DC2D21 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapViewController.swift */; };
 		42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A492295216700DC2D21 /* Main.storyboard */; };
 		42F63A4D2295216800DC2D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A4C2295216800DC2D21 /* Assets.xcassets */; };
@@ -24,7 +23,7 @@
 		1ACB8CA2B2463C2A7B5456F0 /* Pods-weatherAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppSwift.release.xcconfig"; path = "Target Support Files/Pods-weatherAppSwift/Pods-weatherAppSwift.release.xcconfig"; sourceTree = "<group>"; };
 		42F63A422295216700DC2D21 /* weatherAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F63A452295216700DC2D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42F63A472295216700DC2D21 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		42F63A472295216700DC2D21 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		42F63A4A2295216700DC2D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42F63A4C2295216800DC2D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42F63A4F2295216800DC2D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				42F63A452295216700DC2D21 /* AppDelegate.swift */,
-				42F63A472295216700DC2D21 /* MapView.swift */,
+				42F63A472295216700DC2D21 /* MapViewController.swift */,
 				42F63A492295216700DC2D21 /* Main.storyboard */,
 				42F63A4C2295216800DC2D21 /* Assets.xcassets */,
 				42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */,
@@ -225,7 +224,7 @@
 			files = (
 				AC5D87D522952605001000FC /* RequestManager.swift in Sources */,
 				42F63A5E2295320C00DC2D21 /* WeatherViewController.swift in Sources */,
-				42F63A482295216700DC2D21 /* MapView.swift in Sources */,
+				42F63A482295216700DC2D21 /* MapViewController.swift in Sources */,
 				42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */,
 				42F63A5A229521CE00DC2D21 /* CitiesData.swift in Sources */,
 				42F63A58229521B100DC2D21 /* City.swift in Sources */,
