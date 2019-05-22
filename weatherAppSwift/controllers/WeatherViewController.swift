@@ -42,7 +42,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? HeaderCell {
-//            cell.configure(withWeather: weather ?? AnyObject)
+            cell.configure(withWeather: weather?.currently.icon ?? "", temperature: weather?.currently.temperature ?? 0, summary: weather?.currently.summary ?? "")
             return cell
         }
         return UITableViewCell()

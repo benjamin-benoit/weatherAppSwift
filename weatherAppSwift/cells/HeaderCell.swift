@@ -14,14 +14,14 @@ class HeaderCell: UITableViewCell {
     
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var temperature: UILabel!
-    @IBOutlet weak var cloud: UILabel!
     @IBOutlet weak var summary: UILabel!
+//    @IBOutlet weak var summary: UILabel!
     
-    func configure(withWeather weather: Weather) {
-        weatherIcon.image = UIImage(named: weather.currently.icon)
-        temperature.text = String(weather.currently.temperature)
-        cloud.text = String(weather.currently.humidity)
-        summary.text = weather.currently.summary
+    func configure(withWeather weatherIcon: String, temperature: Double, summary: String) {
+        self.weatherIcon.image = UIImage(named: weatherIcon)
+        self.temperature.text = String(temperature)
+        self.summary.text = summary
+//        summary.text = summary
     }
     
 }
