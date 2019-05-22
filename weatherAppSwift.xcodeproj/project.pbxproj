@@ -10,6 +10,7 @@
 		372CB5CA664D6273C772E582 /* Pods_weatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71DAB41610DAC2708C3D76 /* Pods_weatherAppSwift.framework */; };
 		42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A452295216700DC2D21 /* AppDelegate.swift */; };
 		42F63A482295216700DC2D21 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapView.swift */; };
+		42F63A482295216700DC2D21 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapViewController.swift */; };
 		42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A492295216700DC2D21 /* Main.storyboard */; };
 		42F63A4D2295216800DC2D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A4C2295216800DC2D21 /* Assets.xcassets */; };
 		42F63A502295216800DC2D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */; };
