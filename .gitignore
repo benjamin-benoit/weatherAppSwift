@@ -21,6 +21,8 @@ weatherAppSwift.xcodeproj/project.pbxproj
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+*.xcuserstate
+*.moved-aside
 
 ## Other
 *.moved-aside
