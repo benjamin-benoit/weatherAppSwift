@@ -22,13 +22,14 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        print(location)
-        requestCharacters()
+        requestWeather()
     }
-    func requestCharacters() {
+    
+    func requestWeather() {
         RequestManager.getMeteo(latitude: "\(location?.latitude ?? 48.856613)", longitude: "\(location?.latitude ?? 2.352222 )", success: { (data) in
             let decoder = JSONDecoder()
             self.weather = (try? decoder.decode(Weather.self, from: data))
+            print(data)
             self.tableView.reloadData()
         }) { (error) in
             print(error)
@@ -40,6 +41,10 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? HeaderCell {
+            cell.configure(weather: weather?.currently.summary ?? "")
+            return cell
+        }
         return UITableViewCell()
     }
 }

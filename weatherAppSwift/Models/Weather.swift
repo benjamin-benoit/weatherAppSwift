@@ -10,7 +10,8 @@ import Foundation
 
 struct Weather: Decodable {
     var currently: Currently
-    
+    var hourly: Hourly
+    var daily : Daily
 }
 struct Currently : Decodable {
     var icon: String
@@ -19,8 +20,6 @@ struct Currently : Decodable {
     var uvIndex: Double
     var windSpeed: Double
     var humidity: Double
-    var hourly: Hourly
-    var daily : Daily
 }
 struct Hourly:Decodable {
     var summary: String

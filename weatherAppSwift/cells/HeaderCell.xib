@@ -19,23 +19,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-zt-87Y">
-                        <rect key="frame" x="16" y="11" width="288" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdY-VP-fO9">
+                        <rect key="frame" x="139" y="11" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="V5b-zt-87Y" secondAttribute="trailing" id="1fr-2h-jDY"/>
-                    <constraint firstItem="V5b-zt-87Y" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="97w-Fx-Qj9"/>
-                    <constraint firstItem="V5b-zt-87Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Lnj-yb-q7X"/>
-                    <constraint firstItem="V5b-zt-87Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="udw-R2-kOL"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="text" destination="V5b-zt-87Y" id="0xh-9T-FoB"/>
+                <outlet property="la" destination="xdY-VP-fO9" id="v2q-Wu-Z05"/>
             </connections>
         </tableViewCell>
     </objects>

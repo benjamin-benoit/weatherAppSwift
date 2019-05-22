@@ -18,11 +18,9 @@ struct RequestManager {
             (data) in
             switch data.result {
             case .success(let value):
-                print(value)
                 success(value)
                 break
             case .failure(let error):
-                print(error)
                 failure(error)
                 break
             }

@@ -9,17 +9,11 @@
 import UIKit
 
 class HeaderCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    @IBOutlet weak var text: UILabel!
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+  
+    @IBOutlet var la: UILabel!
+    
+    func configure(weather: String) {
+        self.la.text = weather
     }
     
 }
