@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HeaderCell: UITableViewCell {
   
-    @IBOutlet var la: UILabel!
     
-    func configure(weather: String) {
-        self.la.text = weather
+    @IBOutlet weak var weatherIcon: UIImageView!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var cloud: UILabel!
+    @IBOutlet weak var summary: UILabel!
+    
+    func configure(withWeather weather: Weather) {
+        weatherIcon.image = UIImage(named: weather.currently.icon)
+        temperature.text = String(weather.currently.temperature)
+        cloud.text = String(weather.currently.humidity)
+        summary.text = weather.currently.summary
     }
     
 }

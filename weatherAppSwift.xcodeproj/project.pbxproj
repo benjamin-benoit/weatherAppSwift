@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		372CB5CA664D6273C772E582 /* Pods_weatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71DAB41610DAC2708C3D76 /* Pods_weatherAppSwift.framework */; };
+		424523F222957CA20021DE48 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424523F122957CA20021DE48 /* HeaderCell.xib */; };
 		42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A452295216700DC2D21 /* AppDelegate.swift */; };
 		42F63A482295216700DC2D21 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapViewController.swift */; };
 		42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A492295216700DC2D21 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		42F63A5E2295320C00DC2D21 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */; };
 		AC41337822954FB2001BB6A9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337722954FB2001BB6A9 /* Weather.swift */; };
 		AC41337B22956284001BB6A9 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337922956284001BB6A9 /* HeaderCell.swift */; };
-		AC41337C22956284001BB6A9 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC41337A22956284001BB6A9 /* HeaderCell.xib */; };
 		AC41337F22956313001BB6A9 /* HourlyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */; };
 		AC41338022956313001BB6A9 /* HourlyForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */; };
 		AC4133832295632F001BB6A9 /* DailyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4133812295632F001BB6A9 /* DailyForecastCell.swift */; };
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1ACB8CA2B2463C2A7B5456F0 /* Pods-weatherAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppSwift.release.xcconfig"; path = "Target Support Files/Pods-weatherAppSwift/Pods-weatherAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		424523F122957CA20021DE48 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		42F63A422295216700DC2D21 /* weatherAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F63A452295216700DC2D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F63A472295216700DC2D21 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		749FC7CE827E8D1845BF62BB /* Pods-weatherAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-weatherAppSwift/Pods-weatherAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		AC41337722954FB2001BB6A9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AC41337922956284001BB6A9 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		AC41337A22956284001BB6A9 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCell.swift; sourceTree = "<group>"; };
 		AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyForecastCell.xib; sourceTree = "<group>"; };
 		AC4133812295632F001BB6A9 /* DailyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastCell.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				AC41337922956284001BB6A9 /* HeaderCell.swift */,
-				AC41337A22956284001BB6A9 /* HeaderCell.xib */,
+				424523F122957CA20021DE48 /* HeaderCell.xib */,
 				AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */,
 				AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */,
 				AC4133812295632F001BB6A9 /* DailyForecastCell.swift */,
@@ -211,9 +211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC41337C22956284001BB6A9 /* HeaderCell.xib in Resources */,
 				42F63A502295216800DC2D21 /* LaunchScreen.storyboard in Resources */,
 				AC4133882295635C001BB6A9 /* ExtraInfosCell.xib in Resources */,
+				424523F222957CA20021DE48 /* HeaderCell.xib in Resources */,
 				42F63A4D2295216800DC2D21 /* Assets.xcassets in Resources */,
 				AC41338022956313001BB6A9 /* HourlyForecastCell.xib in Resources */,
 				AC4133842295632F001BB6A9 /* DailyForecastCell.xib in Resources */,
