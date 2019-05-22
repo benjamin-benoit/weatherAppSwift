@@ -25,11 +25,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        self.selectedCoordinate = view.annotation?.coordinate
-        print(selectedCoordinate)
-    }
+//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//        performSegue(withIdentifier: "annotation_ID", sender: nil)
+//    }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let viewController = view.annotation as? MKPointAnnotation {
+            self.selectedCoordinate = view.annotation?.coordinate
+            performSegue(withIdentifier: "annotation_ID", sender: viewController)
+        }
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "annotation_ID" {
             if let weatherViewController = segue.destination as? WeatherViewController {
@@ -37,4 +43,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             }
         }
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let viewController = segue.destination as? WeatherViewController {
+//            viewController.location = selectedCoordinate ?? CLLocationCoordinate2D()
+//        }
+//    }
 }
