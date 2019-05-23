@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftMoment
 
 class DailyForecastCell: UITableViewCell {
     
@@ -17,10 +16,12 @@ class DailyForecastCell: UITableViewCell {
     @IBOutlet weak var maxTemperature: UILabel!
     
     func configure(withWeather weatherIcon: String, minTemperature: Double, time: Int, maxTemperature: Double) {
-        
+        let date = NSDate(timeIntervalSince1970: TimeInterval(time))
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("EEEE")
         self.weatherIcon.image = UIImage(named: weatherIcon)
         self.minTemperature.text = "\(Int(minTemperature))°C"
-        self.time.text = "\(moment(time*1000).format("EEEE"))"
+        self.time.text =  "\(formatter.string(from: date as Date))"
         self.maxTemperature.text = "\(Int(maxTemperature))°C"
     }
     

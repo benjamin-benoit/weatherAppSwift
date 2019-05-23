@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftMoment
 
 class HourlyForecastCell: UITableViewCell {
     
@@ -17,9 +16,14 @@ class HourlyForecastCell: UITableViewCell {
     @IBOutlet weak var humidity: UILabel!
     
     func configure(withWeather weatherIcon: String, temperature: Double, time: Int, humidity: Double) {
+        
+        let date = NSDate(timeIntervalSince1970: TimeInterval(time))
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("HH")
+        
         self.weatherIcon.image = UIImage(named: weatherIcon)
         self.temperature.text = "\(Int(temperature))°C"
-        self.time.text = "\(moment(time*1000).format("HH"))"
+        self.time.text = "\(formatter.string(from: date as Date))"
         self.humidity.text = "\(Int(humidity*100)) %"
     }
     
