@@ -9,9 +9,12 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate {
+
     
-    @IBOutlet weak var listView: listView!
+    @IBOutlet weak var tableView: UITableView!
+
+    @IBOutlet weak var listView: UIView!
     @IBAction func menuButton(_ sender: Any) {
         if listView.isHidden == true {
             listView.isHidden = false
@@ -22,10 +25,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     var selectedCoordinate: CLLocationCoordinate2D?
     var cityTitle: String?
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.mapView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         for cities in CitiesData.list {
             let pin = MKPointAnnotation()
             pin.coordinate = cities.coordinates
@@ -42,7 +49,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             performSegue(withIdentifier: "annotation_ID", sender: viewController)
         }
     }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return CitiesData.list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CitiesCell", for: indexPath) as? CitiesCell {
+            cell.configure(cityName: CitiesData.list[indexPath.row].name)
+             return cell
+        }
+        return  UITableViewCell()
+       
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "annotation_ID" {
             if let weatherViewController = segue.destination as? WeatherViewController {

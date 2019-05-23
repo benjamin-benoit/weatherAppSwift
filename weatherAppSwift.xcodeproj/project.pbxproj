@@ -17,7 +17,7 @@
 		42F63A58229521B100DC2D21 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A57229521B100DC2D21 /* City.swift */; };
 		42F63A5A229521CE00DC2D21 /* CitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A59229521CE00DC2D21 /* CitiesData.swift */; };
 		42F63A5E2295320C00DC2D21 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */; };
-		AC24A1DA2296B8EB00CB5C24 /* listView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24A1D92296B8EB00CB5C24 /* listView.swift */; };
+		AC24A1DC2296BE0200CB5C24 /* CitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24A1DB2296BE0200CB5C24 /* CitiesCell.swift */; };
 		AC41337822954FB2001BB6A9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337722954FB2001BB6A9 /* Weather.swift */; };
 		AC41337B22956284001BB6A9 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337922956284001BB6A9 /* HeaderCell.swift */; };
 		AC41337F22956313001BB6A9 /* HourlyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */; };
@@ -40,7 +40,7 @@
 		42F63A59229521CE00DC2D21 /* CitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesData.swift; sourceTree = "<group>"; };
 		42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		749FC7CE827E8D1845BF62BB /* Pods-weatherAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-weatherAppSwift/Pods-weatherAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		AC24A1D92296B8EB00CB5C24 /* listView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listView.swift; sourceTree = "<group>"; };
+		AC24A1DB2296BE0200CB5C24 /* CitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesCell.swift; sourceTree = "<group>"; };
 		AC41337722954FB2001BB6A9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AC41337922956284001BB6A9 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCell.swift; sourceTree = "<group>"; };
@@ -92,7 +92,6 @@
 				42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */,
 				42F63A512295216800DC2D21 /* Info.plist */,
 				AC5D87D422952605001000FC /* RequestManager.swift */,
-				AC24A1D92296B8EB00CB5C24 /* listView.swift */,
 			);
 			path = weatherAppSwift;
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 				AC4133812295632F001BB6A9 /* DailyForecastCell.swift */,
 				AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */,
 				4276929822967EE4003C255E /* TitleCell.swift */,
+				AC24A1DB2296BE0200CB5C24 /* CitiesCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -274,12 +274,12 @@
 			files = (
 				4276929922967EE4003C255E /* TitleCell.swift in Sources */,
 				AC4133832295632F001BB6A9 /* DailyForecastCell.swift in Sources */,
-				AC24A1DA2296B8EB00CB5C24 /* listView.swift in Sources */,
 				AC5D87D522952605001000FC /* RequestManager.swift in Sources */,
 				42F63A5E2295320C00DC2D21 /* WeatherViewController.swift in Sources */,
 				AC41337F22956313001BB6A9 /* HourlyForecastCell.swift in Sources */,
 				42F63A482295216700DC2D21 /* MapViewController.swift in Sources */,
 				AC4133872295635C001BB6A9 /* ExtraInfosCell.swift in Sources */,
+				AC24A1DC2296BE0200CB5C24 /* CitiesCell.swift in Sources */,
 				42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */,
 				AC41337B22956284001BB6A9 /* HeaderCell.swift in Sources */,
 				42F63A5A229521CE00DC2D21 /* CitiesData.swift in Sources */,

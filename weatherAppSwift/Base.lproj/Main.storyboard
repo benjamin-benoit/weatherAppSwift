@@ -44,7 +44,46 @@
                             </mapView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-3N-5Z8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-Ul-Uw7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CitiesCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CitiesCell" rowHeight="63" id="yeO-ty-4aT" customClass="CitiesCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="63"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yeO-ty-4aT" id="QMS-U4-dez">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx0-KM-i9g">
+                                                            <rect key="frame" x="23" y="19" width="329" height="25"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="mx0-KM-i9g" firstAttribute="leading" secondItem="QMS-U4-dez" secondAttribute="leadingMargin" constant="8" id="H9B-3L-3jy"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="mx0-KM-i9g" secondAttribute="trailing" constant="8" id="Uy2-eH-7sY"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="mx0-KM-i9g" secondAttribute="bottom" constant="8" id="yMX-Tc-iba"/>
+                                                        <constraint firstItem="mx0-KM-i9g" firstAttribute="top" secondItem="QMS-U4-dez" secondAttribute="topMargin" constant="8" id="zxz-De-Nay"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="city" destination="mx0-KM-i9g" id="cmk-sO-kww"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QQT-Ul-Uw7" firstAttribute="leading" secondItem="Lva-3N-5Z8" secondAttribute="leading" id="N4A-jx-Qeu"/>
+                                    <constraint firstItem="QQT-Ul-Uw7" firstAttribute="top" secondItem="Lva-3N-5Z8" secondAttribute="top" id="Rxa-an-sVL"/>
+                                    <constraint firstAttribute="trailing" secondItem="QQT-Ul-Uw7" secondAttribute="trailing" id="Ymb-Eg-rj9"/>
+                                    <constraint firstAttribute="bottom" secondItem="QQT-Ul-Uw7" secondAttribute="bottom" id="dmk-3R-fha"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,14 +107,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="listView" destination="Lva-3N-5Z8" id="XnP-V1-Iqk"/>
+                        <outlet property="listView" destination="Lva-3N-5Z8" id="TvZ-hL-50R"/>
                         <outlet property="mapView" destination="0h0-rK-X9C" id="AZz-9a-yt7"/>
+                        <outlet property="tableView" destination="QQT-Ul-Uw7" id="ylq-Bp-tZk"/>
                         <segue destination="Qen-Uf-KFY" kind="show" identifier="annotation_ID" id="1WQ-Qu-tCV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3L-0Y-D60" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="125"/>
+            <point key="canvasLocation" x="160.80000000000001" y="124.58770614692655"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="p4G-or-x1m">
