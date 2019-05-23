@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		372CB5CA664D6273C772E582 /* Pods_weatherAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71DAB41610DAC2708C3D76 /* Pods_weatherAppSwift.framework */; };
+		4276929922967EE4003C255E /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4276929822967EE4003C255E /* TitleCell.swift */; };
 		42F63A462295216700DC2D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A452295216700DC2D21 /* AppDelegate.swift */; };
 		42F63A482295216700DC2D21 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F63A472295216700DC2D21 /* MapViewController.swift */; };
 		42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F63A492295216700DC2D21 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1ACB8CA2B2463C2A7B5456F0 /* Pods-weatherAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppSwift.release.xcconfig"; path = "Target Support Files/Pods-weatherAppSwift/Pods-weatherAppSwift.release.xcconfig"; sourceTree = "<group>"; };
+		4276929822967EE4003C255E /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		42F63A422295216700DC2D21 /* weatherAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F63A452295216700DC2D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F63A472295216700DC2D21 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				AC4133822295632F001BB6A9 /* DailyForecastCell.xib */,
 				AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */,
 				AC4133862295635C001BB6A9 /* ExtraInfosCell.xib */,
+				4276929822967EE4003C255E /* TitleCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4276929922967EE4003C255E /* TitleCell.swift in Sources */,
 				AC4133832295632F001BB6A9 /* DailyForecastCell.swift in Sources */,
 				AC5D87D522952605001000FC /* RequestManager.swift in Sources */,
 				42F63A5E2295320C00DC2D21 /* WeatherViewController.swift in Sources */,
@@ -438,7 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.efrei.weatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.efrei.weatherAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

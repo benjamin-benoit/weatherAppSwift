@@ -10,7 +10,6 @@ import UIKit
 import SDWebImage
 
 class HeaderCell: UITableViewCell {
-  
     
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var temperature: UILabel!
