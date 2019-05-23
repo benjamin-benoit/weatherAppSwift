@@ -40,9 +40,18 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         switch section {
         case 0:
             return 1
+        case 1:
+            return  1
+        case 2:
+            return weather?.hourly.data.count ?? 1
+        case 3:
+            return 1
+        case 4:
+            return weather?.daily.data.count ?? 1
         default:
             return 0
         }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
