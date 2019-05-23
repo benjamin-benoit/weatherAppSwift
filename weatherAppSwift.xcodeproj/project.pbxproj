@@ -19,7 +19,6 @@
 		AC41337822954FB2001BB6A9 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337722954FB2001BB6A9 /* Weather.swift */; };
 		AC41337B22956284001BB6A9 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337922956284001BB6A9 /* HeaderCell.swift */; };
 		AC41337F22956313001BB6A9 /* HourlyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */; };
-		AC41338022956313001BB6A9 /* HourlyForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */; };
 		AC4133832295632F001BB6A9 /* DailyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4133812295632F001BB6A9 /* DailyForecastCell.swift */; };
 		AC4133842295632F001BB6A9 /* DailyForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4133822295632F001BB6A9 /* DailyForecastCell.xib */; };
 		AC4133872295635C001BB6A9 /* ExtraInfosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */; };
@@ -43,7 +42,6 @@
 		AC41337722954FB2001BB6A9 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AC41337922956284001BB6A9 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCell.swift; sourceTree = "<group>"; };
-		AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyForecastCell.xib; sourceTree = "<group>"; };
 		AC4133812295632F001BB6A9 /* DailyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastCell.swift; sourceTree = "<group>"; };
 		AC4133822295632F001BB6A9 /* DailyForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyForecastCell.xib; sourceTree = "<group>"; };
 		AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraInfosCell.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				AC41337922956284001BB6A9 /* HeaderCell.swift */,
 				AC41337D22956313001BB6A9 /* HourlyForecastCell.swift */,
-				AC41337E22956313001BB6A9 /* HourlyForecastCell.xib */,
 				AC4133812295632F001BB6A9 /* DailyForecastCell.swift */,
 				AC4133822295632F001BB6A9 /* DailyForecastCell.xib */,
 				AC4133852295635C001BB6A9 /* ExtraInfosCell.swift */,
@@ -212,7 +209,6 @@
 				42F63A502295216800DC2D21 /* LaunchScreen.storyboard in Resources */,
 				AC4133882295635C001BB6A9 /* ExtraInfosCell.xib in Resources */,
 				42F63A4D2295216800DC2D21 /* Assets.xcassets in Resources */,
-				AC41338022956313001BB6A9 /* HourlyForecastCell.xib in Resources */,
 				AC4133842295632F001BB6A9 /* DailyForecastCell.xib in Resources */,
 				42F63A4B2295216700DC2D21 /* Main.storyboard in Resources */,
 			);

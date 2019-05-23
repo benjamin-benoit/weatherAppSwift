@@ -19,7 +19,7 @@ class HeaderCell: UITableViewCell {
     
     func configure(withWeather weatherIcon: String, temperature: Double, summary: String) {
         self.weatherIcon.image = UIImage(named: weatherIcon)
-        self.temperature.text = String(temperature)
+        self.temperature.text = "\(temperature)°C"
         self.summary.text = summary
 //        summary.text = summary
     }

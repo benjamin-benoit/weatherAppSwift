@@ -21,6 +21,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         for cities in CitiesData.list {
             let pin = MKPointAnnotation()
             pin.coordinate = cities.coordinates
+            pin.title = cities.name
             mapView.addAnnotation(pin)
         }
     }
