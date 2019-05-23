@@ -36,7 +36,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +51,8 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
             return 1
         case 4:
             return weather?.daily.data.count ?? 1
+        case 5:
+            return 1
         default:
             return 0
         }
@@ -85,10 +87,9 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "extrasCell", for: indexPath) as? ExtraInfosCell {
-                
+                cell.configure(withWeather: weather?.currently.humidity ?? 0, windSpeed: weather?.currently.windSpeed ?? 0, pressure: weather?.currently.pressure ?? 0, uvIndex: weather?.currently.uvIndex ?? 0)
                 return cell
             }
-            
         default:
             return UITableViewCell()
         }

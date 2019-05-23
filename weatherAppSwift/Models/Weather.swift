@@ -17,7 +17,8 @@ struct Currently : Decodable {
     var icon: String
     var temperature: Double
     var summary: String
-    var uvIndex: Double
+    var pressure: Double
+    var uvIndex: Int
     var windSpeed: Double
     var humidity: Double
 }
