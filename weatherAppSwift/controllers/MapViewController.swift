@@ -11,9 +11,17 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
+    @IBOutlet weak var listView: listView!
+    @IBAction func menuButton(_ sender: Any) {
+        if listView.isHidden == true {
+            listView.isHidden = false
+        }else{
+            listView.isHidden = true
+        }
+    }
     @IBOutlet weak var mapView: MKMapView!
     var selectedCoordinate: CLLocationCoordinate2D?
-    
+    var cityTitle: String?
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -26,13 +34,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//        performSegue(withIdentifier: "annotation_ID", sender: nil)
-//    }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let viewController = view.annotation as? MKPointAnnotation {
             self.selectedCoordinate = view.annotation?.coordinate
+            cityTitle = view.annotation?.title ?? "empty"
             performSegue(withIdentifier: "annotation_ID", sender: viewController)
         }
     }
@@ -41,13 +47,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if segue.identifier == "annotation_ID" {
             if let weatherViewController = segue.destination as? WeatherViewController {
                 weatherViewController.location = selectedCoordinate ?? CLLocationCoordinate2D()
+                weatherViewController.cities = cityTitle ?? "empty"
             }
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let viewController = segue.destination as? WeatherViewController {
-//            viewController.location = selectedCoordinate ?? CLLocationCoordinate2D()
-//        }
-//    }
 }

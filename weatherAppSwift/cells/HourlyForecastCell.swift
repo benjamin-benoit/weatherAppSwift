@@ -18,7 +18,7 @@ class HourlyForecastCell: UITableViewCell {
     
     func configure(withWeather weatherIcon: String, temperature: Double, time: Int, humidity: Double) {
         self.weatherIcon.image = UIImage(named: weatherIcon)
-        self.temperature.text = "\(temperature)°C"
+        self.temperature.text = "\(Int(temperature))°C"
         self.time.text = "\(moment(time*1000).format("HH"))"
         self.humidity.text = "\(Int(humidity*100)) %"
     }

@@ -14,7 +14,7 @@ let token = "cb256f9f72ca9e3d9f06f68089452881"
 struct RequestManager {
 
     static func getMeteo(latitude: String,longitude: String,success: @escaping (Data)->(), failure: @escaping (Error)->()) {
-        Alamofire.request("https://api.darksky.net/forecast/\(token)/\(latitude),\(longitude)?units=si&lang=fr").responseData {
+        Alamofire.request("https://api.darksky.net/forecast/\(token)/\(latitude),\(longitude)?units=si").responseData {
             (data) in
             switch data.result {
             case .success(let value):

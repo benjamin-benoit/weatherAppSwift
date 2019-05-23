@@ -16,6 +16,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableView: UITableView!
     var location: CLLocationCoordinate2D?
     var weather: Weather?
+    var cities: String = ""
 
 
     override func viewDidLoad() {
@@ -23,6 +24,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         requestWeather()
+        self.title = cities
     }
     
     func requestWeather() {

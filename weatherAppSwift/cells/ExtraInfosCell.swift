@@ -17,9 +17,9 @@ class ExtraInfosCell: UITableViewCell {
     @IBOutlet weak var uvIndex: UILabel!
     
     func configure(withWeather humidity: Double, windSpeed: Double, pressure: Double, uvIndex: Int) {
-        self.humidity.text = "\(humidity)%"
-        self.windSpeed.text = "\(windSpeed)km/h"
-        self.pressure.text = "\(pressure)"
+        self.humidity.text = "\(Int(humidity*100))%"
+        self.windSpeed.text = "\(Int(windSpeed)) km/h"
+        self.pressure.text = "\(Int(pressure))hPa"
         self.uvIndex.text = "\(uvIndex)"
     }
     
