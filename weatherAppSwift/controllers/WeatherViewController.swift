@@ -55,9 +55,19 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? HeaderCell {
-            cell.configure(withWeather: weather?.currently.icon ?? "", temperature: weather?.currently.temperature ?? 0, summary: weather?.currently.summary ?? "")
-            return cell
+        switch (indexPath.section) {
+        case 0:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as? HeaderCell {
+                cell.configure(withWeather: weather?.currently.icon ?? "", temperature: weather?.currently.temperature ?? 0, summary: weather?.currently.summary ?? "")
+                return cell
+            }
+        case 1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "titleHourlyCell", for: indexPath) as? TitleCell {
+                cell.configure(withWeather: weather?.hourly.summary ?? "test")
+                return cell
+            }
+        default:
+            return UITableViewCell()
         }
         return UITableViewCell()
     }
