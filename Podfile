@@ -9,4 +9,5 @@ target 'weatherAppSwift' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod "ForecastIO"
+  pod 'SwiftMoment'
 end

@@ -4,23 +4,27 @@ PODS:
   - SDWebImage (5.0.1):
     - SDWebImage/Core (= 5.0.1)
   - SDWebImage/Core (5.0.1)
+  - SwiftMoment (0.7)
 
 DEPENDENCIES:
   - Alamofire
   - ForecastIO
   - SDWebImage
+  - SwiftMoment
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - ForecastIO
     - SDWebImage
+    - SwiftMoment
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   ForecastIO: 2e3f47e81d0bf8301c632ad56d2ceb0a64083340
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
+  SwiftMoment: dc6dd27012e267819104cbb03f74ff9192dd0b42
 
-PODFILE CHECKSUM: a88030c7b229ec25dee55597e4b265919be77224
+PODFILE CHECKSUM: 495f569ce3785ecc9e0f55f63204ea97de59447d
 
 COCOAPODS: 1.6.1
