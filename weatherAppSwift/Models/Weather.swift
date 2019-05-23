@@ -33,7 +33,7 @@ struct Datas:Decodable {
 }
 
 struct Daily: Decodable {
-    var icon: String
+    var summary: String
     var data: [DataDaily]
 }
 struct  DataDaily: Decodable {

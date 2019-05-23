@@ -22,9 +22,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        //self.tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "headerCell")
         requestWeather()
-        print(weather?.hourly.summary)
     }
     
     func requestWeather() {
@@ -67,7 +65,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "titleHourlyCell", for: indexPath) as? TitleCell {
-                cell.configure(withWeather: weather?.hourly.summary ?? "test")
+                cell.configure(withWeather: weather?.hourly.summary ?? "error")
                 return cell
             }
         case 2:
@@ -75,9 +73,33 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
                 cell.configure(withWeather: weather?.hourly.data[indexPath.row].icon ?? "", temperature: weather?.hourly.data[indexPath.row].temperature ?? 0, time: weather?.hourly.data[indexPath.row].time ?? 0, humidity: weather?.hourly.data[indexPath.row].humidity ?? 0)
                 return cell
             }
+        case 3:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "titleDailyCell", for: indexPath) as? TitleCell {
+                cell.configure(withWeather: weather?.daily.summary ?? "error")
+                return cell
+            }
+        case 4:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "dailyCell", for: indexPath) as? DailyForecastCell {
+                cell.configure(withWeather: weather?.daily.data[indexPath.row].icon ?? "null", minTemperature: weather?.daily.data[indexPath.row].temperatureMin ?? 0.0, time: weather?.daily.data[indexPath.row].time ?? 00, maxTemperature: weather?.daily.data[indexPath.row].temperatureMax ?? 0.0)
+                return cell
+            }
+        case 5:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "extrasCell", for: indexPath) as? ExtraInfosCell {
+                
+                return cell
+            }
+            
         default:
             return UITableViewCell()
         }
         return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 5:
+            return "Extra Informations"
+        default:
+             return ""
+        }
     }
 }
