@@ -17,7 +17,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     var location: CLLocationCoordinate2D?
     var weather: Weather?
     var cities: String = ""
-
+    var Spinner : UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
