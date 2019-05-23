@@ -72,6 +72,7 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="city" destination="mx0-KM-i9g" id="cmk-sO-kww"/>
+                                                    <segue destination="Qen-Uf-KFY" kind="show" identifier="listView_ID" id="fbe-F1-Nkg"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -465,4 +466,7 @@
     <resources>
         <image name="icons8-menu-50" width="37.5" height="37.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fbe-F1-Nkg"/>
+    </inferredMetricsTieBreakers>
 </document>
