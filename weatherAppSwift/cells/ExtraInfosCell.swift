@@ -11,16 +11,16 @@ import UIKit
 class ExtraInfosCell: UITableViewCell {
 
 
-    @IBOutlet weak var humidity: UILabel!
-    @IBOutlet weak var windSpeed: UILabel!
-    @IBOutlet weak var pressure: UILabel!
-    @IBOutlet weak var uvIndex: UILabel!
+    @IBOutlet weak var leftTitle: UILabel!
+    @IBOutlet weak var leftValue: UILabel!
+    @IBOutlet weak var rightTitle: UILabel!
+    @IBOutlet weak var rightValue: UILabel!
     
-    func configure(withWeather humidity: Double, windSpeed: Double, pressure: Double, uvIndex: Int) {
-        self.humidity.text = "\(Int(humidity*100))%"
-        self.windSpeed.text = "\(Int(windSpeed)) km/h"
-        self.pressure.text = "\(Int(pressure))hPa"
-        self.uvIndex.text = "\(uvIndex)"
+    func configure(leftTitle: String, leftValue: String, rightTitle: String, rightValue: String) {
+        self.leftTitle.text = leftTitle
+        self.leftValue.text = leftValue
+        self.rightTitle.text = rightTitle
+        self.rightValue.text = rightValue
     }
     
 }

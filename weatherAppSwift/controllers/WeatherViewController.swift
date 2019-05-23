@@ -38,7 +38,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 8
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,6 +54,10 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         case 4:
             return weather?.daily.data.count ?? 1
         case 5:
+            return 1
+        case 6:
+            return 1
+        case 7:
             return 1
         default:
             return 0
@@ -88,21 +92,23 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
                 return cell
             }
         case 5:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "extrasCell", for: indexPath) as? ExtraInfosCell {
-                cell.configure(withWeather: weather?.currently.humidity ?? 0, windSpeed: weather?.currently.windSpeed ?? 0, pressure: weather?.currently.pressure ?? 0, uvIndex: weather?.currently.uvIndex ?? 0)
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "titleExtraCell", for: indexPath) as? TitleCell {
+                cell.configure(withWeather: "Extra Informations")
+                return cell
+            }
+        case 6:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "firstExtrasCell", for: indexPath) as? ExtraInfosCell {
+                cell.configure(leftTitle: "Humidity", leftValue: "\(Int((weather?.currently.humidity ?? 0)*100)) %", rightTitle: "WindSpeed", rightValue: "\(Int(weather?.currently.windSpeed ?? 0)) km/h")
+                return cell
+            }
+        case 7:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "secondExtrasCell", for: indexPath) as? ExtraInfosCell {
+                cell.configure(leftTitle: "Pressure", leftValue: "\(Int(weather?.currently.pressure ?? 0)) hPa", rightTitle: "UV Index", rightValue: "\(weather?.currently.uvIndex ?? 0)")
                 return cell
             }
         default:
             return UITableViewCell()
         }
         return UITableViewCell()
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 5:
-            return "Extra Informations"
-        default:
-             return ""
-        }
     }
 }

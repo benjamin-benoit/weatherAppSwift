@@ -78,4 +78,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, UITableViewDataSou
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
