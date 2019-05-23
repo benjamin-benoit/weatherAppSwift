@@ -9,16 +9,17 @@
 import UIKit
 
 class DailyForecastCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBOutlet weak var weatherIcon: UIImageView!
+    @IBOutlet weak var minTemperature: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var maxTemperature: UILabel!
+    
+    func configure(withWeather weatherIcon: String, minTemperature: Double, time: Int, maxTemperature: Double) {
+        self.weatherIcon.image = UIImage(named: weatherIcon)
+        self.minTemperature.text = "\(minTemperature)°C"
+        self.time.text = "\(time)"
+        self.maxTemperature.text = "\(maxTemperature)"
     }
     
 }

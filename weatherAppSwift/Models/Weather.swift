@@ -29,7 +29,7 @@ struct Datas:Decodable {
     var time: Int
     var icon: String
     var humidity: Double
-    var pressure: Double
+    var temperature: Double
 }
 
 struct Daily: Decodable {

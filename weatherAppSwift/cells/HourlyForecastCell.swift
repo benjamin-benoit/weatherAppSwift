@@ -9,16 +9,17 @@
 import UIKit
 
 class HourlyForecastCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBOutlet weak var weatherIcon: UIImageView!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var humidity: UILabel!
+    
+    func configure(withWeather weatherIcon: String, temperature: Double, time: Int, humidity: Double) {
+        self.weatherIcon.image = UIImage(named: weatherIcon)
+        self.temperature.text = "\(temperature)°C"
+        self.time.text = "\(time)"
+        self.humidity.text = "\(humidity)"
     }
     
 }

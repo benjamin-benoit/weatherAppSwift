@@ -67,7 +67,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EUF-Ma-AUO">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="0.0" green="0.37738155393636186" blue="0.78315252590673579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="133" id="xSD-YO-Oi6" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="133"/>
@@ -118,7 +118,7 @@
                                             <outlet property="weatherIcon" destination="J4r-Hw-gVf" id="tgA-Ho-tZC"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="46" id="pjM-3N-adF" customClass="TitleCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="titleHourlyCell" rowHeight="46" id="pjM-3N-adF" customClass="TitleCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="161" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pjM-3N-adF" id="w9K-06-6ot">
@@ -141,8 +141,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="XQu-O6-xQj" id="RYI-LX-xmj"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="46" id="uLf-vj-cXV" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hourlyCell" rowHeight="46" id="uLf-vj-cXV" customClass="HourlyForecastCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="207" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uLf-vj-cXV" id="6Nh-Bw-jpg">
@@ -191,8 +194,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="humidity" destination="g1B-1u-5vc" id="3LC-G8-YfS"/>
+                                            <outlet property="temperature" destination="OUr-NX-Tfg" id="Gee-aR-9MX"/>
+                                            <outlet property="time" destination="ERk-3W-TAe" id="C6r-jH-J8O"/>
+                                            <outlet property="weatherIcon" destination="bkn-UP-1nb" id="w7J-3X-LLn"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="46" id="viX-Zf-2pg" customClass="TitleCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="titleDailyCell" rowHeight="46" id="viX-Zf-2pg" customClass="TitleCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="253" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="viX-Zf-2pg" id="YZR-r9-rJF">
@@ -215,8 +224,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="title" destination="Du4-lN-LI0" id="Bpd-N2-B9Y"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="46" id="lws-83-Jid" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dailyCell" rowHeight="46" id="lws-83-Jid" customClass="DailyForecastCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="299" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lws-83-Jid" id="EZg-a1-tY8">
@@ -268,8 +280,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.2666666667" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="maxTemperature" destination="PLH-kN-IBq" id="kaz-6R-IA3"/>
+                                            <outlet property="minTemperature" destination="Esb-nv-Wah" id="KNS-Go-U4T"/>
+                                            <outlet property="time" destination="ygP-ff-1LT" id="3Tc-2a-d26"/>
+                                            <outlet property="weatherIcon" destination="Xq4-rF-GxG" id="xgv-OG-bdy"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="80" id="8K3-sU-FAW" customClass="HeaderCell" customModule="weatherAppSwift" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="extrasCell" rowHeight="80" id="8K3-sU-FAW" customClass="ExtraInfosCell" customModule="weatherAppSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="345" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8K3-sU-FAW" id="Oz2-uz-TDN">
