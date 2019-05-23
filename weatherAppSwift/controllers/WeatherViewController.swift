@@ -24,6 +24,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.delegate = self
         //self.tableView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellReuseIdentifier: "headerCell")
         requestWeather()
+        print(weather?.hourly.summary)
     }
     
     func requestWeather() {
@@ -34,6 +35,10 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         }) { (error) in
             print(error)
         }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,7 +56,6 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         default:
             return 0
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,6 +68,11 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "titleHourlyCell", for: indexPath) as? TitleCell {
                 cell.configure(withWeather: weather?.hourly.summary ?? "test")
+                return cell
+            }
+        case 2:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "hourlyCell", for: indexPath) as? HourlyForecastCell {
+                cell.configure(withWeather: weather?.hourly.data[indexPath.row].icon ?? "", temperature: weather?.hourly.data[indexPath.row].temperature ?? 0, time: weather?.hourly.data[indexPath.row].time ?? 0, humidity: weather?.hourly.data[indexPath.row].humidity ?? 0)
                 return cell
             }
         default:
