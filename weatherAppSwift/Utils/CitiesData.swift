@@ -29,12 +29,13 @@ struct CitiesData {
         City(name: "Anchorage", coordinates: CLLocationCoordinate2D(latitude: 61.2181, longitude: -149.9003)),
         City(name: "Honolulu", coordinates: CLLocationCoordinate2D(latitude: 21.3069, longitude: -157.8583)),
         City(name: "Bamako", coordinates: CLLocationCoordinate2D(latitude: 12.639232, longitude: -8.002889)),
-        City(name: "Inde", coordinates: CLLocationCoordinate2D(latitude: 25.912460, longitude: -105.223534)),
+        City(name: "New Delhi", coordinates: CLLocationCoordinate2D(latitude: 28.613939, longitude: 77.209023)),
         City(name: "Marrakesh", coordinates: CLLocationCoordinate2D(latitude: 31.629473, longitude: -7.981084)),
         City(name: "Tunis", coordinates: CLLocationCoordinate2D(latitude: 36.806496, longitude: 10.181532)),
         City(name: "Bretagne", coordinates: CLLocationCoordinate2D(latitude: 47.002789, longitude: 1.682210)),
         City(name: "Casablanca", coordinates: CLLocationCoordinate2D(latitude: 33.573109, longitude: -7.589843)),
         City(name: "Fes", coordinates: CLLocationCoordinate2D(latitude: 34.018124, longitude: -5.007845)),
+        City(name: "Beyrouth", coordinates: CLLocationCoordinate2D(latitude: 33.888069, longitude: 35.503960)),
         City(name: "Noumea", coordinates: CLLocationCoordinate2D(latitude: -22.2711, longitude: 166.4416))
     ]
 }
