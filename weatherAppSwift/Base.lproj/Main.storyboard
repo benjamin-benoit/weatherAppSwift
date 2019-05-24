@@ -553,11 +553,6 @@
                             <constraint firstItem="93t-f9-kiZ" firstAttribute="bottom" secondItem="OYD-CC-Jg9" secondAttribute="bottom" id="rZg-MP-7hs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="93t-f9-kiZ"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="OYD-CC-Jg9"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="loadingView" destination="OYD-CC-Jg9" id="yod-Ox-sY6"/>
