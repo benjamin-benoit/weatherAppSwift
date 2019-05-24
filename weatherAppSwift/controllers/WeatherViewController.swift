@@ -19,6 +19,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
     var cities: String = ""
     var Spinner : UIView?
 
+    @IBOutlet weak var loadingView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -26,7 +27,12 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         requestWeather()
         self.title = cities
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        let backgroundImage = UIImage(named: "rain.png")
+        tableView.backgroundView = UIImageView(image: backgroundImage)
+        tableView.backgroundColor = UIColor.clear
+        
+    }
     func requestWeather() {
         RequestManager.getMeteo(latitude: "\(location?.latitude ?? 48.856613)", longitude: "\(location?.latitude ?? 2.352222 )", success: { (data) in
             let decoder = JSONDecoder()

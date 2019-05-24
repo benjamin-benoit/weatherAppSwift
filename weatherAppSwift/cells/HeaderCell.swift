@@ -21,4 +21,5 @@ class HeaderCell: UITableViewCell {
         self.summary.text = summary
     }
     
+    
 }
