@@ -34,7 +34,7 @@ struct CitiesData {
         City(name: "Tunis", coordinates: CLLocationCoordinate2D(latitude: 36.806496, longitude: 10.181532)),
         City(name: "Bretagne", coordinates: CLLocationCoordinate2D(latitude: 47.002789, longitude: 1.682210)),
         City(name: "Casablanca", coordinates: CLLocationCoordinate2D(latitude: 33.573109, longitude: -7.589843)),
-        City(name: "Fes", coordinates: CLLocationCoordinate2D(latitude: 34.018124, longitude: -5.007845)),
+        City(name: "Fès", coordinates: CLLocationCoordinate2D(latitude: 34.018124, longitude: -5.007845)),
         City(name: "Beyrouth", coordinates: CLLocationCoordinate2D(latitude: 33.888069, longitude: 35.503960)),
         City(name: "Noumea", coordinates: CLLocationCoordinate2D(latitude: -22.2711, longitude: 166.4416))
     ]
