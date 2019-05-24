@@ -27,20 +27,18 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.backgroundColor = UIColor.clear
         requestWeather()
         self.title = cities
-         print(weather?.currently.icon)
-       
     }
     override func viewWillAppear(_ animated: Bool) {
 
-        let backgroundImage = UIImage(named: "bgrain")
-        tableView.backgroundView = UIImageView(image: backgroundImage)
-        tableView.contentMode = .scaleAspectFit
     }
     func requestWeather() {
         RequestManager.getMeteo(latitude: "\(location?.latitude ?? 48.856613)", longitude: "\(location?.latitude ?? 2.352222 )", success: { (data) in
             let decoder = JSONDecoder()
             self.weather = (try? decoder.decode(Weather.self, from: data))
             self.tableView.reloadData()
+            let backgroundImage = UIImage(named: "bg" + (self.weather?.currently.icon ?? ""))
+            self.tableView.backgroundView = UIImageView(image: backgroundImage)
+            self.tableView.contentMode = .scaleAspectFit
             self.loadingView.isHidden = true
         }) { (error) in
             print(error)
@@ -58,7 +56,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         case 1:
             return  1
         case 2:
-            return weather?.hourly.data.count ?? 1
+            return 24 
         case 3:
             return 1
         case 4:
