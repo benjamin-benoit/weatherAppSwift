@@ -27,13 +27,14 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.backgroundColor = UIColor.clear
         requestWeather()
         self.title = cities
+         print(weather?.currently.icon)
+       
     }
     override func viewWillAppear(_ animated: Bool) {
-        let backgroundImage = UIImage(named: "rain.png")
+
+        let backgroundImage = UIImage(named: "bgrain")
         tableView.backgroundView = UIImageView(image: backgroundImage)
         tableView.contentMode = .scaleAspectFit
-      
-        
     }
     func requestWeather() {
         RequestManager.getMeteo(latitude: "\(location?.latitude ?? 48.856613)", longitude: "\(location?.latitude ?? 2.352222 )", success: { (data) in
