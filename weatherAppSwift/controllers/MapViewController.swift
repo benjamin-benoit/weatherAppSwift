@@ -15,14 +15,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
 
     @IBOutlet weak var listView: UIView!
-    @IBAction func menuButton(_ sender: Any) {
+    @IBOutlet weak var mapView: MKMapView!
+    
+    @IBAction func segmentList(_ sender: Any) {
         if listView.isHidden == true {
             listView.isHidden = false
         }else{
             listView.isHidden = true
         }
     }
-    @IBOutlet weak var mapView: MKMapView!
     var selectedCoordinate: CLLocationCoordinate2D?
     var cityTitle: String?
     
