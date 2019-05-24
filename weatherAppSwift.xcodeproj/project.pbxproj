@@ -83,6 +83,7 @@
 		42F63A442295216700DC2D21 /* weatherAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ACD921DA2297FE2000884C27 /* Utils */,
 				AC41338C22956AA6001BB6A9 /* controllers */,
 				AC41338B22956A7F001BB6A9 /* cells */,
 				AC41338A22956A58001BB6A9 /* Models */,
@@ -91,7 +92,6 @@
 				42F63A4C2295216800DC2D21 /* Assets.xcassets */,
 				42F63A4E2295216800DC2D21 /* LaunchScreen.storyboard */,
 				42F63A512295216800DC2D21 /* Info.plist */,
-				AC5D87D422952605001000FC /* RequestManager.swift */,
 			);
 			path = weatherAppSwift;
 			sourceTree = "<group>";
@@ -116,8 +116,6 @@
 		AC41338A22956A58001BB6A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				42F63A57229521B100DC2D21 /* City.swift */,
-				42F63A59229521CE00DC2D21 /* CitiesData.swift */,
 				AC41337722954FB2001BB6A9 /* Weather.swift */,
 			);
 			path = Models;
@@ -143,6 +141,16 @@
 				42F63A5D2295320C00DC2D21 /* WeatherViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		ACD921DA2297FE2000884C27 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D87D422952605001000FC /* RequestManager.swift */,
+				42F63A59229521CE00DC2D21 /* CitiesData.swift */,
+				42F63A57229521B100DC2D21 /* City.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
