@@ -511,7 +511,7 @@
                                             <fragment content="Loading">
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="24" name="FiraCode-Regular"/>
+                                                    <font key="NSFont" metaFont="system" size="24"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -556,7 +556,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-menu-50" width="37.5" height="37.5"/>
+        <image name="icons8-menu-50" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fbe-F1-Nkg"/>
