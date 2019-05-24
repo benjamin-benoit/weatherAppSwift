@@ -507,7 +507,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-1h-Ml3">
-                                        <rect key="frame" x="0.0" y="225" width="375" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="247.5" width="375" height="28"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Loading">
                                                 <attributes>
@@ -525,12 +525,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="ayE-kM-O2M" firstAttribute="top" secondItem="r9J-1h-Ml3" secondAttribute="bottom" constant="16" id="5ap-Up-ByE"/>
                                     <constraint firstAttribute="trailing" secondItem="r9J-1h-Ml3" secondAttribute="trailing" id="Jou-9E-f53"/>
                                     <constraint firstItem="r9J-1h-Ml3" firstAttribute="leading" secondItem="OYD-CC-Jg9" secondAttribute="leading" id="Llg-Qa-HhB"/>
                                     <constraint firstItem="ayE-kM-O2M" firstAttribute="centerX" secondItem="OYD-CC-Jg9" secondAttribute="centerX" id="b4U-fq-xYc"/>
                                     <constraint firstItem="ayE-kM-O2M" firstAttribute="centerY" secondItem="OYD-CC-Jg9" secondAttribute="centerY" id="iKv-lP-tb9"/>
-                                    <constraint firstItem="ayE-kM-O2M" firstAttribute="top" secondItem="r9J-1h-Ml3" secondAttribute="bottom" constant="30" id="x9N-Fy-yWa"/>
-                                    <constraint firstItem="r9J-1h-Ml3" firstAttribute="top" secondItem="OYD-CC-Jg9" secondAttribute="top" constant="225" id="yGn-LJ-oq6"/>
                                 </constraints>
                             </view>
                         </subviews>

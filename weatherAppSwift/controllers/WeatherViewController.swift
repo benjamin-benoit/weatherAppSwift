@@ -38,6 +38,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
             let decoder = JSONDecoder()
             self.weather = (try? decoder.decode(Weather.self, from: data))
             self.tableView.reloadData()
+            self.loadingView.isHidden = true
         }) { (error) in
             print(error)
         }
