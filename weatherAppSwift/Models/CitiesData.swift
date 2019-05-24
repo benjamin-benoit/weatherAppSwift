@@ -28,6 +28,7 @@ struct CitiesData {
         City(name: "Moscow", coordinates: CLLocationCoordinate2D(latitude: 55.7558, longitude: 37.6173)),
         City(name: "Anchorage", coordinates: CLLocationCoordinate2D(latitude: 61.2181, longitude: -149.9003)),
         City(name: "Honolulu", coordinates: CLLocationCoordinate2D(latitude: 21.3069, longitude: -157.8583)),
+        City(name: "Bamako", coordinates: CLLocationCoordinate2D(latitude: 12.639232, longitude: -8.002889)),
         City(name: "Noumea", coordinates: CLLocationCoordinate2D(latitude: -22.2711, longitude: 166.4416))
     ]
 }
