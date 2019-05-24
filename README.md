@@ -1,7 +1,11 @@
-# Weather App
+# :round_pushpin: Weather App :earth_africa:
 
-iOS application by Ibrahim and Benjamin, developed in Swift.
+iOS application by:
 
+ Ibrahima DANSOKO => https://github.com/IBRAHIMDANS
+ </br> Benjamin BENOIT => https://github.com/benjamin-benoit
+ 
+Developed in Swift.
 ## Description
 
 This app is used to see the weather, when you start the app, you can see a map with different locations, you can asso access to them with the menu. When you tap on a location, you can see the weather.
