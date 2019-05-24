@@ -23,7 +23,7 @@ class HourlyForecastCell: UITableViewCell {
         formatter.setLocalizedDateFormatFromTemplate("HH")
         self.weatherIcon.image = UIImage(named: weatherIcon)
         self.temperature.text = "\(Int(temperature))°C"
-        self.time.text = "\(formatter.string(from: date as Date))"
+        self.time.text = "\(formatter.string(from: date as Date))H"
         self.humidity.text = "\(Int(humidity*100)) %"
     }
     
