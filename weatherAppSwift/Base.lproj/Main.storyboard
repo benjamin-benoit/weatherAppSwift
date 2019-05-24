@@ -41,6 +41,7 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-rK-X9C">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.071696210489999995" green="0.26425384460000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </mapView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-3N-5Z8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
@@ -80,7 +81,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="QQT-Ul-Uw7" firstAttribute="leading" secondItem="Lva-3N-5Z8" secondAttribute="leading" id="N4A-jx-Qeu"/>
                                     <constraint firstItem="QQT-Ul-Uw7" firstAttribute="top" secondItem="Lva-3N-5Z8" secondAttribute="top" id="Rxa-an-sVL"/>
@@ -89,7 +90,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.071696210489999995" green="0.26425384460000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mem-Uh-Ve9" firstAttribute="bottom" secondItem="Lva-3N-5Z8" secondAttribute="bottom" id="9Dv-Iq-3XR"/>
                             <constraint firstItem="mem-Uh-Ve9" firstAttribute="trailing" secondItem="0h0-rK-X9C" secondAttribute="trailing" id="Mab-hn-K3e"/>
@@ -539,7 +540,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.071696210489999995" green="0.26425384460000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OYD-CC-Jg9" firstAttribute="leading" secondItem="93t-f9-kiZ" secondAttribute="leading" id="GZX-V3-hPL"/>
                             <constraint firstItem="EUF-Ma-AUO" firstAttribute="leading" secondItem="93t-f9-kiZ" secondAttribute="leading" id="NzP-Yl-xMW"/>
