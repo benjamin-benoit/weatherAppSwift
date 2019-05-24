@@ -15,7 +15,7 @@ class DailyForecastCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var maxTemperature: UILabel!
     
-    func configure(withWeather weatherIcon: String, minTemperature: Double, time: Int, maxTemperature: Double) {
+    func configure(withWeather weatherIcon: String, minTemperature: Double, time: Int, maxTemperature: Double ) {
         let date = NSDate(timeIntervalSince1970: TimeInterval(time))
         let formatter = DateFormatter()
         formatter.setLocalizedDateFormatFromTemplate("EEEE")

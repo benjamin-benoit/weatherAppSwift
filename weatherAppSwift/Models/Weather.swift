@@ -10,6 +10,7 @@ import Foundation
 
 struct Weather: Decodable {
     var currently: Currently
+    var timezone: String
     var hourly: Hourly
     var daily : Daily
 }

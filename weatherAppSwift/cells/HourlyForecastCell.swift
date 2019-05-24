@@ -15,12 +15,12 @@ class HourlyForecastCell: UITableViewCell {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var humidity: UILabel!
     
-    func configure(withWeather weatherIcon: String, temperature: Double, time: Int, humidity: Double) {
+    func configure(withWeather weatherIcon: String, temperature: Double, time: Int, humidity: Double, timezone:String) {
         
         let date = NSDate(timeIntervalSince1970: TimeInterval(time))
         let formatter = DateFormatter()
+         formatter.timeZone = TimeZone(identifier: timezone)
         formatter.setLocalizedDateFormatFromTemplate("HH")
-        
         self.weatherIcon.image = UIImage(named: weatherIcon)
         self.temperature.text = "\(Int(temperature))°C"
         self.time.text = "\(formatter.string(from: date as Date))"

@@ -89,7 +89,7 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "hourlyCell", for: indexPath) as? HourlyForecastCell {
                 cell.backgroundColor = UIColor.clear
-                cell.configure(withWeather: weather?.hourly.data[indexPath.row].icon ?? "", temperature: weather?.hourly.data[indexPath.row].temperature ?? 0, time: weather?.hourly.data[indexPath.row].time ?? 0, humidity: weather?.hourly.data[indexPath.row].humidity ?? 0)
+                cell.configure(withWeather: weather?.hourly.data[indexPath.row].icon ?? "", temperature: weather?.hourly.data[indexPath.row].temperature ?? 0, time: weather?.hourly.data[indexPath.row].time ?? 0, humidity: weather?.hourly.data[indexPath.row].humidity ?? 0, timezone: weather?.timezone ?? "Paris")
                 return cell
             }
         case 3:
