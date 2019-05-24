@@ -73,7 +73,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, UITableViewDataSou
         } else if segue.identifier == "listView_ID" {
             if let weatherViewController = segue.destination as? WeatherViewController , let indexPathSelected = tableView.indexPathForSelectedRow {
                 weatherViewController.location = CitiesData.list[indexPathSelected.row].coordinates
-                weatherViewController.cities = CitiesData.list[indexPathSelected.row].name ?? "empty"
+                weatherViewController.cities = CitiesData.list[indexPathSelected.row].name 
             }
         }
     }
